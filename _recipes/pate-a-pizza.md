@@ -7,6 +7,8 @@ ingredients:
 - 4 càs d'huile d'olive
 - 240 mL d'eau
 - 1 càc de levure sèche
+cooking: 15
+temperature: 180
 ---
 
 Dans le bol de la machine à pain, ajouter les ingrédients dans l'ordre.
