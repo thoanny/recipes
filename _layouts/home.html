@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<ul class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" id="recipes">
+    {% for recipe in site.recipes %}
+        <li>
+            <a href="{{ recipe.url }}" class="block bg-white shadow hover:shadow-lg rounded overflow-hidden">
+                <img src="{{ recipe.id }}.jpg" onerror="this.src='/assets/img/default.jpg'" class="object-cover object-center h-56 w-full" alt="">
+                <span class="block py-2 px-4 font-semibold truncate">{{ recipe.title }}</span>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+
+

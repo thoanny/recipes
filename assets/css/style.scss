@@ -1,0 +1,54 @@
+---
+---
+
+$green: #93c045;
+
+body {
+  counter-reset: step;
+}
+
+nav {
+  background-color: $green;
+}
+
+#thumbnail {
+  overflow: hidden;
+  height: 400px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#steps {
+
+  > br {
+    display: none;
+  }
+
+  > p {
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+
+    &:before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: -.25rem;
+      font-size: 2rem;
+      font-weight: bold;
+      opacity: .33;
+      line-height: 1;
+      width: 2rem;
+      text-align: right;
+    }
+
+    > br {
+      display: inline;
+    }
+  }
+}
+

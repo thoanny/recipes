@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="flex flex-wrap-reverse lg:flex-nowrap space-x-0 lg:space-x-8">
+    <div class="w-full lg:w-3/4">
+        <div id="thumbnail" class="shadow w-full rounded mb-8">
+            <img src="{{ page.id }}.jpg" onerror="this.src='/assets/img/default.jpg'" class="object-cover object-center" alt="">
+        </div>
+
+        <div id="steps">
+            {{ content | newline_to_br }}
+        </div>
+    </div>
+
+    <div class="w-full lg:w-1/4">
+
+        {% if page.temperature or page.cooking %}
+            <ul class="grid grid-cols-2 gap-4 mb-4">
+                {% if page.temperature %}
+                    <li class="bg-white rounded shadow py-2 px-4 flex items-center"><img src="/assets/img/thermometer.svg" class="h-5 w-5 mr-2 inline" alt="">{{ page.temperature }}&nbsp;°C</li>
+                {% endif %}
+                {% if page.cooking %}
+                    <li class="bg-white rounded shadow py-2 px-4 flex items-center"><img src="/assets/img/clock.svg" class="h-5 w-5 mr-2 inline" alt="">{{ page.cooking }}&nbsp;min</li>
+                {% endif %}
+            </ul>
+        {% endif %}
+
+        <div class="bg-white rounded shadow mb-4">
+            <h2 class=" font-semibold py-2 px-4 flex items-center"><img src="/assets/img/apple.svg" class="h-5 w-5 mr-2 inline" alt="">Ingrédients</h2>
+            <ul>
+                {% for ingredient in page.ingredients %}
+                    <li class="border-t border-gray-200 py-2 px-4">&ndash; {{ingredient}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+</div>

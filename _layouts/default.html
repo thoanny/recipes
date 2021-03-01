@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>{% if page.id %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="bg-gray-100">
+
+<div>
+    <nav>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="block">
+                        <div class="flex items-baseline space-x-4">
+                            <a href="/" class="text-white hover:opacity-75 font-medium flex items-center">{% if page.id %}<img src="/assets/img/arrow-left.svg" class="w-4 h-4 mr-2" alt="">{% endif %}{{ site.title }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <div class="ml-3 relative">
+                            <img class="h-8 w-8 rounded-full border border-white" src="/assets/img/avatar.png" alt="Thoanny">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold text-gray-900 truncate">
+                {{ page.title }}
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <div class="px-4 py-6 sm:px-0">
+                {{ content }}
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
+    Made with <img src="/assets/img/heart.svg" class="h-4 inline" alt=""> by <a href="https://anthony-destenay.fr" target="_blank" class="font-semibold">Anthony</a>
+</footer>
+</body>
+</html>
