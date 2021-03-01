@@ -23,6 +23,11 @@ nav {
 
 #steps {
 
+  a {
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
   > br {
     display: none;
   }
