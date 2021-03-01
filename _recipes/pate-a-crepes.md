@@ -1,6 +1,6 @@
 ---
 layout: recipe
-title:  "Pâte à crèpes"
+title:  "Pâte à crêpes"
 ingredients:
 - 250 g de farine
 - 4 &oelig;ufs
