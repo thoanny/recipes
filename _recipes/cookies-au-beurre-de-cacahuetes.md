@@ -26,4 +26,4 @@ Ajouter la farine, la levure et les cacahuètes (ou pépites de chocolat) et rem
 
 Disposer des tas de la taille d'une noix sur une plaque de cuisson beurée, en les espaçant bien.
 
-Enfourner pendant 10 minutes.
+Enfourner.
