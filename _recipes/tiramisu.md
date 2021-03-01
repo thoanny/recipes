@@ -19,6 +19,7 @@ Battre les jaunes avec le sucre dans un grand bol, jusqu'à ce qu'ils soient pus
 
 Mélanger le café avec l'amaretto (ou du rhum).
 
-Dans un plat, alterner les couches avec la préparation et des boudoirs trempés dans le café (côté sucre). Commencer et terminer avec la préparation et saupoudrer de cacao amer.
+Dans un plat, alterner les couches avec la préparation et des boudoirs trempés dans le café (côté sucre). 
+Commencer et terminer avec la préparation et saupoudrer de cacao amer.
 
 Réserver au frais quelques heures.
